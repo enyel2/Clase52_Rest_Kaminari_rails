@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @birthday.name %>
+</p>
+
+<!-- Se añadio para mostrar la fecha-->
+<p>
+  <strong>Fecha de Cumpleaños:</strong>
+  <%= @birthday.date_birthday %>
+</p>
+
+<%= link_to 'Edit', edit_birthday_path(@birthday) %> |
+<%= link_to 'Back', birthdays_path %>
